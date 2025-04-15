@@ -23,8 +23,15 @@
   "keywords": [
     "mcp",
     "cursor",
-    "rules"
+    "rules",
+    "model-context-protocol",
+    "ai",
+    "cursor-editor"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjh19971228/rules_mcp.git"
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {

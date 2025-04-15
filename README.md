@@ -2,6 +2,38 @@
 
 A Model Context Protocol (MCP) server for managing Cursor editor rules. This server analyzes user requirements and generates appropriate rule files to enhance the coding experience in Cursor editor.
 
+## Installation
+
+### Option 1: Direct Usage with npx (Recommended)
+
+```bash
+npx mcp-rule-server
+```
+
+### Option 2: Installation via npm
+
+For global installation:
+
+```bash
+npm install -g mcp-rule-server
+```
+
+For local project installation:
+
+```bash
+npm install mcp-rule-server
+```
+
+After installation, you can run it with:
+
+```bash
+# If installed globally
+mcp-rule-server
+
+# If installed locally
+npx mcp-rule-server
+```
+
 ## Features
 
 - Analyze user technology stack requirements
@@ -9,47 +41,19 @@ A Model Context Protocol (MCP) server for managing Cursor editor rules. This ser
 - Create properly configured rule files
 - Support for interactive and automatic modes
 
-## Installation
-
-### Via npx (Recommended)
-
-MCP Rule Server can be run directly using npx without global installation:
-
-```bash
-npx mcp-rule-server
-```
+## Usage
 
 Supported parameters:
 
 ```bash
-npx mcp-rule-server --rules-dir /path/to/rules/directory --target-dir /path/to/output/directory --threshold 0.8
+mcp-rule-server --rules-dir /path/to/rules/directory --target-dir /path/to/output/directory --threshold 0.8
 ```
 
-#### Parameter Description
+### Parameter Description
 
 - `--rules-dir /path/to/rules`: Specify rules directory (default: `./dist/rules`)
 - `--target-dir /path/to/output`: Specify target output directory (default: `./.cursor/rules`)
 - `--threshold 0.8`: Set confidence threshold for rule matching (default: 0.7)
-
-### Local Installation (Optional)
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/tjh19971228/rules_mcp.git
-   cd rules_mcp
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Build the project:
-   ```bash
-   npm run build
-   ```
 
 ## MCP Configuration Guide
 
