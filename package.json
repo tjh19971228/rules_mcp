@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "description": "Model Context Protocol server for Cursor rules management",
   "main": "dist/index.js",
+  "bin": {
+    "mcp-rule-server": "bin/cli.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "rules"
+  ],
   "scripts": {
     "build": "tsc && node scripts/copy-rules.js",
     "copy-rules": "node scripts/copy-rules.js",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "test": "jest",
-    "lint": "eslint 'src/**/*.ts'"
+    "lint": "eslint 'src/**/*.ts'",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "mcp",

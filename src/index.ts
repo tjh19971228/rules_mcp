@@ -7,6 +7,13 @@ import { RuleManager } from './ruleManager';
 import { z } from 'zod';
 import fs from 'fs';
 
+// 显示欢迎信息
+console.log('==========================================');
+console.log('  MCP Rule Server 启动中');
+console.log('  版本：1.0.0');
+console.log('==========================================');
+console.log('');
+
 // Load environment variables
 dotenv.config();
 
